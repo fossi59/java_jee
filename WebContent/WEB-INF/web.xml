@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>TpJava</display-name>
+	<!-- déploiement de la servlet -->
+	<servlet>
+		<servlet-name>cs</servlet-name>
+		<servlet-class>com.web.ControleurServlet</servlet-class>
+	</servlet>
+	<!-- specifier les url qu'on utilisera pour faire appel a notre servlet -->
+	<servlet-mapping>
+		<servlet-name>cs</servlet-name>
+		<!--on fera appel de notre servlet via url-pattern. a chaque fois que url 
+			finira par /html, on fait appel au controleur -->
+		<url-pattern>*.php</url-pattern>
+	</servlet-mapping>
+</web-app>

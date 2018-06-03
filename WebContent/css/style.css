@@ -1,0 +1,24 @@
+
+div{
+	border:2px solid gray;
+	margin: 5px;
+	padding:5px;
+	display:inline-block;
+}
+table th{
+	border:1px dotted gray;
+	margin: 5px;
+	padding:5px;
+	background: pink;
+	text-align: center;
+}
+table td{
+	border:1px dotted gray;
+	margin: 5px;
+	padding:5px;
+	background: white;
+	text-align: center
+}
+a{
+	text-decoration: none;
+}
